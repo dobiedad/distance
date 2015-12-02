@@ -81,5 +81,14 @@ function doEverything(){
     }
   });
 }
+$( document ).ready( function () {
+  $('#question').click(function(){
+    toggleMenu();
+  });
+});
+function toggleMenu(){
+  $('#map-canvas').toggleClass('toggle');
+  $('.menu').toggleClass('toggle-menu');
+}
 
 google.maps.event.addDomListener(window, 'load', initialize);

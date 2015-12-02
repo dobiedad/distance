@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Radius From My Location</title>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUwEcJw3GYSz560LmyrxnnGQCJx62cKbU">
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="map.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css"> </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+
   <body>
-    <div id="map-canvas"></div>
-    <div id="overlay">
-      <input type="text" id="postcode" name="name" placeholder="Your Postcode"></input>
-      <input type="text" id="distance" name="name" placeholder="Radius In Miles"></input>
-      <button type="button" onClick="doEverything()">Draw Circle</button>
+
+    <div class="menu">
+      <div class="inputs">
+        <input type="text" id="postcode" name="name" placeholder="Your Postcode"></input>
+        <input type="text" id="distance" name="name" placeholder="Radius In Miles"></input>
+        <button type="button" onClick="doEverything()">Draw Circle</button>
+      </div>
     </div>
+    <div id="map-canvas"></div>
+    <a class="fa fa-question" id="question"></a>
+
   </body>
 </html>
