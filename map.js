@@ -76,6 +76,7 @@ function doEverything(){
       }
       google.maps.event.addListener(marker, 'click', toggleBounce);
       drawCircle(distance);
+      toggleMenu()
     } else {
       alert("We could not find your postcode, please try again ");
     }
