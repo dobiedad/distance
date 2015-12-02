@@ -5,6 +5,7 @@ var circle;
 
 
 function initialize() {
+  var random = Math.floor(Math.random()*16777215).toString(16);
   var mapOptions = {
     zoom: 16,
     navigationControl: false,
@@ -14,7 +15,7 @@ function initialize() {
     { stylers:[
       { "visibility": "on" },
       { "invert_lightness": true },
-      { "hue": "#ff8800" },
+      { "hue": '#'+random },
       { "saturation": 62 },
       { "lightness": 13 },
       { "gamma": 0.66 }
