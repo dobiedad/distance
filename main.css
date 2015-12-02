@@ -1,0 +1,47 @@
+#map-canvas {
+  height:100vh;
+  z-index:1;
+  width:100%;
+
+}
+#overlay {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   z-index: 99;
+   background: #000000;
+   padding: 10px;
+}
+body {
+  margin: 0px;
+}
+input{
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+  font-size: 20px;
+  width: 150px;
+  height: 47px;
+  padding-left: 5px;
+  border: 1px solid rgb(215, 143, 59);
+  color:rgb(215, 143, 59);
+
+}
+::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+button{
+  font-size: 20px;
+  width: 150px;
+  height: 51px;
+  background: rgba(80, 13, 13, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  border: 1px solid rgb(215, 143, 59);
+}
+button:hover{
+  background: rgba(80, 13, 13, 1);
+  color: rgb(215, 143, 59);
+}
